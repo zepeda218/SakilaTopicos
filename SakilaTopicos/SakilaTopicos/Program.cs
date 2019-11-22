@@ -10,6 +10,12 @@ namespace SakilaTopicos
     {
         static void Main(string[] args)
         {
+            Queries Query = new Queries();
+         //   Query.InsertStaff("Katia", "Oliveira", "katiao@gmail.com");
+            Query.StaffNames();
+          //  Query.DeleteRental(1001);
+            Console.ReadKey();
+
         }
     }
 }
