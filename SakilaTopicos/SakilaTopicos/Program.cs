@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SakilaTopicos
 {
@@ -10,10 +6,9 @@ namespace SakilaTopicos
     {
         static void Main(string[] args)
         {
-            Queries Query = new Queries();
-         //   Query.InsertStaff("Katia", "Oliveira", "katiao@gmail.com");
+            WCFQueries Query = new WCFQueries();
             Query.StaffNames();
-          //  Query.DeleteRental(1001);
+            Query.DeleteRental(123);
             Console.ReadKey();
 
         }

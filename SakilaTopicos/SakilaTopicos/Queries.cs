@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity.Infrastructure;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SakilaTopicos
 {
@@ -11,7 +7,7 @@ namespace SakilaTopicos
     {
         public Queries()
         {
-           // using (var context = new sakilaEntities());
+            //using (var context = new sakilaEntities());
         }
 
         public void StaffNames()
@@ -30,12 +26,13 @@ namespace SakilaTopicos
             context.SaveChanges();
         }
 
-        public void PaymentAmounts() {
+        public void PaymentAmounts()
+        {
             //Instance
             var context = new sakilaEntities();
             //Query
             var payments = from payment in context.payment
-                         select payment;
+                           select payment;
             foreach (payment payment in payments)
             {
                 Console.WriteLine(payment.amount + " " + payment.customer_id + " " + payment.last_update);
@@ -44,17 +41,17 @@ namespace SakilaTopicos
             context.SaveChanges();
         }
 
-        public void DeleteRental(int id) {
+        public void DeleteRental(int id)
+        {
             //Instance
             var context = new sakilaEntities();
-
-            var ObjjectContext = ((IObjectContextAdapter)context).ObjectContext;
 
             var delete = context.rental.Where(rental => rental.rental_id == id).First();
             context.rental.Remove(delete);
             context.SaveChanges();
 
+            Console.WriteLine("Rental succesfully deleted");
         }
-        
+
     }
 }
