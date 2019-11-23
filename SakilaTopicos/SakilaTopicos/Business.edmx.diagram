@@ -5,10 +5,10 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="3461c271f4154855adc8d8af0add327c" Name="Diagram1">
-        <EntityTypeShape EntityType="sakilaModel.payment" Width="1.5" PointX="5.25" PointY="5.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="sakilaModel.rental" Width="1.5" PointX="3" PointY="6.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="sakilaModel.staff" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="sakilaModel.store" Width="1.5" PointX="3" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="sakilaModel.payment" Width="1.5" PointX="9.375" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="sakilaModel.rental" Width="1.5" PointX="7" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="sakilaModel.staff" Width="1.5" PointX="4.625" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="sakilaModel.store" Width="1.5" PointX="1.75" PointY="6" IsExpanded="true" />
         <AssociationConnector Association="sakilaModel.fk_payment_rental" ManuallyRouted="false" />
         <AssociationConnector Association="sakilaModel.fk_payment_staff" ManuallyRouted="false" />
         <AssociationConnector Association="sakilaModel.fk_rental_staff" ManuallyRouted="false" />

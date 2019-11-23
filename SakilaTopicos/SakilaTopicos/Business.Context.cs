@@ -29,5 +29,7 @@ namespace SakilaTopicos
         public virtual DbSet<rental> rental { get; set; }
         public virtual DbSet<staff> staff { get; set; }
         public virtual DbSet<store> store { get; set; }
+
+
     }
 }
